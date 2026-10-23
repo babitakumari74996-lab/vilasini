@@ -10,6 +10,7 @@ export default defineConfig({
       target: "react",
       autoCodeSplitting: true,
       routeFileIgnorePattern: "^_",
+      generatedRouteTree: "./src/routeTree.gen.ts",
     }),
     react(),
     tailwindcss(),

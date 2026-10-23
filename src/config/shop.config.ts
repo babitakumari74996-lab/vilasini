@@ -14,16 +14,16 @@ const env = import.meta.env as Record<string, string | undefined>;
 
 export const shopConfig = {
   /** Display name — shown in nav logo, footer, page titles, JSON-LD. */
-  shopName: env["VITE_SHOP_NAME"]?.trim() || "K2 Ladies Designer",
+  shopName: env["VITE_SHOP_NAME"]?.trim() || "Vilasini",
 
   /** Short brand line — used in hero subtitle and footer blurb. */
   tagline:
     env["VITE_SHOP_TAGLINE"]?.trim() ||
-    "Bridal blouses, Aari & Maggam work, and made-to-measure occasion wear",
+    "Sarees, suits, lehengas and ethnic wear",
 
   tagline_footer:
     env["VITE_SHOP_TAGLINE"]?.trim() ||
-    "K2 Ladies Designer is a founder-led bridal designer studio in New Siddhapudur, Coimbatore, specialising in bridal blouses, Aari and Maggam hand embroidery, designer blouses, wedding lehengas, reception gowns, custom tailoring and made-to-measure occasion wear.",
+    "Vilasini is a D2C fashion boutique in Kolkata, West Bengal, specialising in sarees, suits, lehengas and ethnic wear with WhatsApp and Instagram ordering.",
 
   /** Approximate starting year based on the studio's published 16+ years of design experience. */
   foundedYear: env["VITE_SHOP_FOUNDED_YEAR"] ?? "2010",
@@ -39,18 +39,18 @@ export const shopConfig = {
    * Official studio contact.
    */
   whatsappNumber:
-    env["VITE_WHATSAPP_NUMBER"]?.trim() || "+91 97900 94017",
+    env["VITE_WHATSAPP_NUMBER"]?.trim() || "+91 98765 43210",
 
   /** Instagram handle (no "@" required in value, kept for display). */
-  instagramHandle: env["VITE_INSTAGRAM_HANDLE"] ?? "",
+  instagramHandle: env["VITE_INSTAGRAM_HANDLE"] ?? "vilasini_kolkata",
 
   /** Public contact email — footer, account profile, JSON-LD. */
   contactEmail:
-    env["VITE_CONTACT_EMAIL"] ?? "support@k2ladiesdesigner.com",
+    env["VITE_CONTACT_EMAIL"] ?? "contact@vilasini.in",
 
   /** Deployed site URL — JSON-LD `sameAs` + OG URL. */
   websiteUrl:
-    env["VITE_WEBSITE_URL"] ?? "https://k2ladiesdesigner.com",
+    env["VITE_WEBSITE_URL"] ?? "https://vilasini.store",
 
   /**
    * Products: this template ships a STATIC catalog in `src/lib/products.ts`
@@ -64,40 +64,40 @@ export const shopConfig = {
   address: {
     street:
       env["VITE_SHOP_STREET"] ??
-      "86-2/476A, Venkatasamy Road",
+      "Kolkata",
     locality:
       env["VITE_SHOP_LOCALITY"] ??
-      "Annapoorna Layout, New Siddhapudur",
-    city: env["VITE_SHOP_CITY"] ?? "Coimbatore",
-    region: env["VITE_SHOP_REGION"] ?? "Tamil Nadu",
-    postalCode: env["VITE_SHOP_POSTAL"] ?? "641044",
+      "Kolkata",
+    city: env["VITE_SHOP_CITY"] ?? "Kolkata",
+    region: env["VITE_SHOP_REGION"] ?? "West Bengal",
+    postalCode: env["VITE_SHOP_POSTAL"] ?? "700001",
     country: "India",
   },
 
   /**
    * Google Maps listing link — used by the "Find us on Map" button.
    */
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=K2+Ladies+Designer+86-2%2F476A+Venkatasamy+Road+Annapoorna+Layout+New+Siddhapudur+Coimbatorehttps://github.com/babitakumari74996-lab/lumina-commerce",
+  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Vilasini+Kolkata+West+Bengal",
 
   /** Google Maps embed (iframe) URL — leave "" until an embed link is provided. */
   googleMapsEmbedUrl: env["VITE_GOOGLE_MAPS_EMBED_URL"] ?? "",
 
   /** Display phone (spaces fine) + tel: href (digits only). */
-  phone: "+91 97900 94017",
-  phoneHref: "+919790094017",
+  phone: "+91 98765 43210",
+  phoneHref: "+919876543210",
 
   /** Opening hours line — footer + boutiques. */
   hours:
     env["VITE_SHOP_HOURS"] ?? "Monday – Saturday · 10 AM - 8 PM",
 
   /** Geo coordinates for JSON-LD — from the provided Google Maps listing. */
-  lat: 11.0204471,
-  lng: 76.9738379,
+  lat: 22.5726,
+  lng: 88.3639,
 
   /** Hero headline — first line white, second line gold italic. */
   hero: {
-    part1: "K2 Ladies",
-    part2: "Bridal Craft",
+    part1: "Vilasini",
+    part2: "Ethnic Wear",
   },
 
   /**
@@ -113,32 +113,32 @@ export const shopConfig = {
     /** Display name — shown in nav logo, footer, page titles, JSON-LD. */
     shopName:
       env["VITE_TODAY_FASHION_SHOP_NAME"] ??
-      "K2 Ladies Designer",
+      "Vilasini",
 
     /** City — used in page titles and descriptions. */
     city:
       env["VITE_TODAY_FASHION_CITY"] ??
-      "Coimbatore",
+      "Kolkata",
 
     /** Street address — footer "Visit the store". */
     street:
       env["VITE_TODAY_FASHION_STREET"] ??
-      "86-2/476A, Venkatasamy Road",
+      "Kolkata",
 
     /** Locality — used in full address. */
     locality:
       env["VITE_TODAY_FASHION_LOCALITY"] ??
-      "Annapoorna Layout, New Siddhapudur",
+      "Kolkata",
 
     /** Region — used in full address. */
     region:
       env["VITE_TODAY_FASHION_REGION"] ??
-      "Tamil Nadu",
+      "West Bengal",
 
     /** Postal code. */
     postalCode:
       env["VITE_TODAY_FASHION_POSTAL"] ??
-      "641044",
+      "700001",
 
     /** Country. */
     country: "India",
@@ -146,21 +146,21 @@ export const shopConfig = {
     /** Google Maps URL. */
     googleMapsUrl:
       env["VITE_TODAY_FASHION_GOOGLE_MAPS_URL"] ??
-      "https://www.google.com/maps/place/K2+Ladies+Designer/@11.0204524,76.971263,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba859c4e4461e37:0xa8c2e099247a148e!8m2!3d11.0204471!4d76.9738379!16s%2Fg%2F11vrvcs8s6?entry=ttu&g_ep=EgoyMDI2MDkwOC4wIKXMDSoASAFQAw%3D%3D",
+      "https://www.google.com/maps/search/?api=1&query=Vilasini+Kolkata+West+Bengal",
 
     /** Contact email. */
     contactEmail:
       env["VITE_TODAY_FASHION_CONTACT_EMAIL"] ??
-      "support@k2ladiesdesigner.com",
+      "contact@vilasini.in",
 
     /** Instagram handle. */
     instagramHandle:
-      env["VITE_TODAY_FASHION_INSTAGRAM_HANDLE"] ?? "",
+      env["VITE_TODAY_FASHION_INSTAGRAM_HANDLE"] ?? "vilasini_kolkata",
 
     /** WhatsApp number. */
     whatsappNumber:
       env["VITE_TODAY_FASHION_WHATSAPP_NUMBER"] ??
-      "919790094017",
+      "919876543210",
 
     /** Opening hours. */
     hours:
@@ -170,12 +170,12 @@ export const shopConfig = {
     /** Latitude for JSON-LD. */
     lat: env["VITE_TODAY_FASHION_LAT"]
       ? parseFloat(env["VITE_TODAY_FASHION_LAT"])
-      : 11.0204471,
+      : 22.5726,
 
     /** Longitude for JSON-LD. */
     lng: env["VITE_TODAY_FASHION_LNG"]
       ? parseFloat(env["VITE_TODAY_FASHION_LNG"])
-      : 76.9738379,
+      : 88.3639,
   } as const,
 } as const;
 

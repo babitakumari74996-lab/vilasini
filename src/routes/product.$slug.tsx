@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useState } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { Heart, Share2, Minus, Plus, RotateCw, Truck, ShieldCheck } from "lucide-react";
 import { toast } from "sonner";
 import { getProduct, products, formatPrice, type Product } from "@/lib/products";
